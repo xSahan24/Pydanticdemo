@@ -4,7 +4,7 @@ from pydantic import ValidationError
 
 def test_valid_user():
     user = User(name="Sahan", age=19, email="Sahan@example.com")
-    assert user.name == "Alice"
+    assert user.name == "Sahan"
 
 def test_invalid_email():
     with pytest.raises(ValidationError):
